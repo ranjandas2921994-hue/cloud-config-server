@@ -1,12 +1,13 @@
 microservice:
   payment-service:
-      endpoints:
-        endpoint:
-          uri: http://PAYMENT-SERVICE/payment/doPayment
+    endpoints:
+      endpoint:
+        uri: http://PAYMENT-SERVICE/payment/doPayment
   order-service:
-      endpoints:
-        endpoint:
-          uri: http://ORDER-SERVICE/order/bookOrder     
+    endpoints:
+      endpoint:
+        uri: http://ORDER-SERVICE/order/bookOrder
+
 eureka:
   client:
     register-with-eureka: true
@@ -14,6 +15,4 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
   instance:
-    hostname: localhost              
-          
-          
+    hostname: localhost
